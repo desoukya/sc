@@ -1,0 +1,23 @@
+{
+  "name": "l8-e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/cucumber-js -f json:cucumber.json e2e/features/ -r e2e/steps/ --parallel 3 && node ./report.js",
+    "users-service": "./node_modules/.bin/cucumber-js -f json:cucumber.json e2e/features/ -r e2e/steps/ --tags '@users-service'",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "faker": "^5.1.0",
+    "lodash": "^4.17.20",
+    "dotenv-flow": "^3.2.0",
+    "express": "4.17.1"
+  },
+  "devDependencies": {
+    "cucumber": "^6.0.5",
+    "cucumber-html-reporter": "^5.2.0"
+  },  
+  "license": "ISC"
+}

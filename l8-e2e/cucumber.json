@@ -1,0 +1,234 @@
+[
+  {
+    "description": "  In order manage users\n  As a developer\n  I want to make sure CRUD operations through REST API works fine",
+    "keyword": "Feature",
+    "name": "Users Service",
+    "line": 2,
+    "id": "users-service",
+    "tags": [
+      {
+        "name": "@users-service",
+        "line": 1
+      }
+    ],
+    "uri": "e2e/features/users.feature",
+    "elements": [
+      {
+        "id": "users-service;create-a-user",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "create a user",
+        "tags": [
+          {
+            "name": "@users-service",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "A user {\"id\":99,\"name\":\"Dwayne Klocko\",\"email\":\"Rene30@hotmail.com\",\"phoneNumber\":\"1-876-420-9890\"}",
+            "match": {
+              "location": "e2e/steps/users.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I send POST request to /users",
+            "match": {
+              "location": "e2e/steps/users.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 46000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I get response code 201",
+            "match": {
+              "location": "e2e/steps/users.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "users-service;create-a-user",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "create a user",
+        "tags": [
+          {
+            "name": "@users-service",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "A user {\"id\":7,\"name\":\"Ian Weimann DVM\",\"email\":\"Euna_Bergstrom@hotmail.com\",\"phoneNumber\":\"(297) 962-1879\"}",
+            "match": {
+              "location": "e2e/steps/users.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I send POST request to /users",
+            "match": {
+              "location": "e2e/steps/users.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I get response code 201",
+            "match": {
+              "location": "e2e/steps/users.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "users-service;get-user",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "get user",
+        "tags": [
+          {
+            "name": "@users-service",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "A userId 99 exist",
+            "match": {
+              "location": "e2e/steps/users.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I send GET request to /users",
+            "match": {
+              "location": "e2e/steps/users.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I receive {\"id\":99,\"name\":\"Dwayne Klocko\",\"email\":\"Rene30@hotmail.com\",\"phoneNumber\":\"1-876-420-9890\",\"secondaryPhoneNumber\": \"(914) 249-3519\"}",
+            "match": {
+              "location": "e2e/steps/users.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "users-service;get-user",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "get user",
+        "tags": [
+          {
+            "name": "@users-service",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "A userId 7 exist",
+            "match": {
+              "location": "e2e/steps/users.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I send GET request to /users",
+            "match": {
+              "location": "e2e/steps/users.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I receive {\"id\":7,\"name\":\"Ian Weimann DVM\",\"email\":\"Euna_Bergstrom@hotmail.com\",\"phoneNumber\":\"(297) 962-1879\", \"secondaryPhoneNumber\": \"788.323.7782\"}",
+            "match": {
+              "location": "e2e/steps/users.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
