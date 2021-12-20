@@ -1,0 +1,12 @@
+{
+  "data": {
+    "temperature": "16 °C",
+    "wind": "31 km/h",
+    "description": "Light rain shower",
+    "forecast": [
+      { "day": "1", "temperature": "+22 °C", "wind": "42 km/h" },
+      { "day": "2", "temperature": "+8 °C", "wind": "73 km/h" },
+      { "day": "3", "temperature": "+11 °C", "wind": "31 km/h" }
+    ]
+  }
+}

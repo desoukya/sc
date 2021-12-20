@@ -1,0 +1,82 @@
+{
+  "data": [
+    {
+      "name": "Turkey",
+      "topLevelDomain": [
+        ".tr"
+      ],
+      "alpha2Code": "TR",
+      "alpha3Code": "TUR",
+      "callingCodes": [
+        "90"
+      ],
+      "capital": "Ankara",
+      "altSpellings": [
+        "TR",
+        "Turkiye",
+        "Republic of Turkey",
+        "Türkiye Cumhuriyeti"
+      ],
+      "subregion": "Western Asia",
+      "region": "Asia",
+      "population": 84339067,
+      "latlng": [
+        39,
+        35
+      ],
+      "demonym": "Turkish",
+      "area": 783562,
+      "gini": 41.9,
+      "timezones": [
+        "UTC+03:00"
+      ],
+      "borders": [
+        "ARM",
+        "AZE",
+        "BGR",
+        "GEO",
+        "GRC",
+        "IRN",
+        "IRQ",
+        "SYR"
+      ],
+      "nativeName": "Türkiye",
+      "numericCode": "792",
+      "flags": {
+        "svg": "https://flagcdn.com/tr.svg",
+        "png": "https://flagcdn.com/w320/tr.png"
+      },
+      "currencies": [
+        {
+          "code": "TRY",
+          "name": "Turkish lira",
+          "symbol": "֏"
+        }
+      ],
+      "languages": [
+        {
+          "iso639_1": "tr",
+          "iso639_2": "tur",
+          "name": "Turkish",
+          "nativeName": "Türkçe"
+        }
+      ],
+      "translations": {
+        "br": "Turquia",
+        "pt": "Turquia",
+        "nl": "Turkije",
+        "hr": "Turska",
+        "fa": "ترکیه",
+        "de": "Türkei",
+        "es": "Turquía",
+        "fr": "Turquie",
+        "ja": "トルコ",
+        "it": "Turchia",
+        "hu": "Törökország"
+      },
+      "flag": "https://flagcdn.com/tr.svg",
+      "cioc": "TUR",
+      "independent": false
+    }
+  ]
+}

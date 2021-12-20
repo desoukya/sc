@@ -14,7 +14,7 @@ Feature: Users Service
       | {"id":99,"name":"Dwayne Klocko","email":"Rene30@hotmail.com","phoneNumber":"1-876-420-9890"}          |
       | {"id":7,"name":"Ian Weimann DVM","email":"Euna_Bergstrom@hotmail.com","phoneNumber":"(297) 962-1879"} |
 
-  Scenario Outline: get user
+  Scenario Outline: get user by Id
     Given A userId <id> exist
     When I send GET request to /users
     Then I receive <response>
@@ -23,3 +23,4 @@ Feature: Users Service
       | id | response                                                                                                                                      |
       | 99 | {"id":99,"name":"Dwayne Klocko","email":"Rene30@hotmail.com","phoneNumber":"1-876-420-9890","secondaryPhoneNumber": "(914) 249-3519"}         |
       | 7  | {"id":7,"name":"Ian Weimann DVM","email":"Euna_Bergstrom@hotmail.com","phoneNumber":"(297) 962-1879", "secondaryPhoneNumber": "788.323.7782"} |
+      | 8  | null                                                                                                                                          |

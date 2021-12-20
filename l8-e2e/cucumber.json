@@ -32,11 +32,11 @@
             "line": 8,
             "name": "A user {\"id\":99,\"name\":\"Dwayne Klocko\",\"email\":\"Rene30@hotmail.com\",\"phoneNumber\":\"1-876-420-9890\"}",
             "match": {
-              "location": "e2e/steps/users.js:5"
+              "location": "e2e/steps/users.js:6"
             },
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 4000000
             }
           },
           {
@@ -45,11 +45,11 @@
             "line": 9,
             "name": "I send POST request to /users",
             "match": {
-              "location": "e2e/steps/users.js:13"
+              "location": "e2e/steps/users.js:10"
             },
             "result": {
               "status": "passed",
-              "duration": 46000000
+              "duration": 49000000
             }
           },
           {
@@ -58,11 +58,11 @@
             "line": 10,
             "name": "I get response code 201",
             "match": {
-              "location": "e2e/steps/users.js:23"
+              "location": "e2e/steps/users.js:14"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 3000000
             }
           }
         ]
@@ -86,11 +86,11 @@
             "line": 8,
             "name": "A user {\"id\":7,\"name\":\"Ian Weimann DVM\",\"email\":\"Euna_Bergstrom@hotmail.com\",\"phoneNumber\":\"(297) 962-1879\"}",
             "match": {
-              "location": "e2e/steps/users.js:5"
+              "location": "e2e/steps/users.js:6"
             },
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 1000000
             }
           },
           {
@@ -99,11 +99,11 @@
             "line": 9,
             "name": "I send POST request to /users",
             "match": {
-              "location": "e2e/steps/users.js:13"
+              "location": "e2e/steps/users.js:10"
             },
             "result": {
               "status": "passed",
-              "duration": 41000000
+              "duration": 55000000
             }
           },
           {
@@ -112,20 +112,20 @@
             "line": 10,
             "name": "I get response code 201",
             "match": {
-              "location": "e2e/steps/users.js:23"
+              "location": "e2e/steps/users.js:14"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 2000000
             }
           }
         ]
       },
       {
-        "id": "users-service;get-user",
+        "id": "users-service;get-user-by-id",
         "keyword": "Scenario",
         "line": 24,
-        "name": "get user",
+        "name": "get user by Id",
         "tags": [
           {
             "name": "@users-service",
@@ -140,11 +140,11 @@
             "line": 18,
             "name": "A userId 99 exist",
             "match": {
-              "location": "e2e/steps/users.js:9"
+              "location": "e2e/steps/users.js:19"
             },
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 3000000
             }
           },
           {
@@ -153,11 +153,11 @@
             "line": 19,
             "name": "I send GET request to /users",
             "match": {
-              "location": "e2e/steps/users.js:18"
+              "location": "e2e/steps/users.js:23"
             },
             "result": {
               "status": "passed",
-              "duration": 37000000
+              "duration": 43000000
             }
           },
           {
@@ -166,7 +166,7 @@
             "line": 20,
             "name": "I receive {\"id\":99,\"name\":\"Dwayne Klocko\",\"email\":\"Rene30@hotmail.com\",\"phoneNumber\":\"1-876-420-9890\",\"secondaryPhoneNumber\": \"(914) 249-3519\"}",
             "match": {
-              "location": "e2e/steps/users.js:27"
+              "location": "e2e/steps/users.js:28"
             },
             "result": {
               "status": "passed",
@@ -176,10 +176,10 @@
         ]
       },
       {
-        "id": "users-service;get-user",
+        "id": "users-service;get-user-by-id",
         "keyword": "Scenario",
         "line": 25,
-        "name": "get user",
+        "name": "get user by Id",
         "tags": [
           {
             "name": "@users-service",
@@ -194,11 +194,11 @@
             "line": 18,
             "name": "A userId 7 exist",
             "match": {
-              "location": "e2e/steps/users.js:9"
+              "location": "e2e/steps/users.js:19"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -207,7 +207,61 @@
             "line": 19,
             "name": "I send GET request to /users",
             "match": {
-              "location": "e2e/steps/users.js:18"
+              "location": "e2e/steps/users.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I receive {\"id\":7,\"name\":\"Ian Weimann DVM\",\"email\":\"Euna_Bergstrom@hotmail.com\",\"phoneNumber\":\"(297) 962-1879\", \"secondaryPhoneNumber\": \"788.323.7782\"}",
+            "match": {
+              "location": "e2e/steps/users.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "users-service;get-user-by-id",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "get user by Id",
+        "tags": [
+          {
+            "name": "@users-service",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "A userId 8 exist",
+            "match": {
+              "location": "e2e/steps/users.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I send GET request to /users",
+            "match": {
+              "location": "e2e/steps/users.js:23"
             },
             "result": {
               "status": "passed",
@@ -218,13 +272,13 @@
             "arguments": [],
             "keyword": "Then ",
             "line": 20,
-            "name": "I receive {\"id\":7,\"name\":\"Ian Weimann DVM\",\"email\":\"Euna_Bergstrom@hotmail.com\",\"phoneNumber\":\"(297) 962-1879\", \"secondaryPhoneNumber\": \"788.323.7782\"}",
+            "name": "I receive null",
             "match": {
-              "location": "e2e/steps/users.js:27"
+              "location": "e2e/steps/users.js:28"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 3000000
             }
           }
         ]
